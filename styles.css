@@ -1,0 +1,34 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Fallback generic styles if tailwind doesn't load instantly */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#canvasContainer {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+/* Custom scrollbar to make it look premium */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1; 
+}
+
+/* Canvas active controls coloring - injected via Fabric but fallback here */
+.canvas-container {
+    margin: 0 auto;
+}
